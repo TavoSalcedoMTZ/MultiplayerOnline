@@ -1,9 +1,13 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+#include "OnlineGameMode.h"
+#include "OnlinePlayerState.h"
 
-
-#include "multiplayer/OnlineGameMode.h"
+AOnlineGameMode::AOnlineGameMode()
+{
+	PlayerStateClass = AOnlinePlayerState::StaticClass();
+}
 
 void AOnlineGameMode::BeginPlay()
 {
+	Super::BeginPlay();
 	UE_LOG(LogTemp, Warning, TEXT("GAMEMODE"));
 }

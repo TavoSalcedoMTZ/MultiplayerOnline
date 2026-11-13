@@ -18,8 +18,9 @@ public class Multiplayer : ModuleRules
 			"StateTreeModule",
 			"GameplayStateTreeModule",
 			"UMG",
-			"Slate"
-		});
+			"Slate",
+            "GameplayAbilities"
+        });
 
 		PrivateDependencyModuleNames.AddRange(new string[] { });
 
